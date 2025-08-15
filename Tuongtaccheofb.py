@@ -625,7 +625,7 @@ def banner():
 \033[1;32m██╔═██╗░██╔══██║██║░░██║██║ ░░░██║░░░██║░░██║██║░░██║██║░░░░░
 \033[1;35m██║░╚██╗██║░░██║╚█████╔╝██║ ░░░██║░░░╚█████╔╝╚█████╔╝███████╗
 \033[1;36m╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝ ░░░╚═╝░░░░╚════╝░░╚════╝░╚══════╝
-\033[1;97mTool By: \033[1;32mKhôi Nguyên         \033[1;97mPhiên Bản: \033[1;32mV1    
+\033[1;97mTool By: \033[1;32mkhoi nguyen          \033[1;97mPhiên Bản: \033[1;32mV1    
 \033[97m════════════════════════════════════════════════  
 \033[1;97m[\033[1;91m<>\033[1;97m]\033[1;95m \033[1;31mTOOL TTC VIP
 \033[1;97m[\033[1;91m<>\033[1;97m]\033[1;95m BOX Tele\033[1;31m : \033[1;36mhttps://t.me/+WVAiTiVrELZlYmM1
@@ -639,7 +639,7 @@ def banner():
   for X in banner:
     sys.stdout.write(X)
     sys.stdout.flush() 
-    time.sleep(0.00120)
+    time.sleep(0.00219)
 def delay(value):
 	while not(value <= 1):
 		value -= 0.123
@@ -670,13 +670,14 @@ def Nhap_cookie():
     fb = Facebook_api(cookiefb)
     name = fb.getinfo()
     if name == False:
-		print(f'{thanh_dep}{redb}Cookie Facebook Die, Vui Lòng Nhập lại !!!')
-		demnick -= 1
+      print(f'{thanh_dep}{redb}Cookie Facebook Die, Vui Lòng Nhập lại !!!')
+      print('\033[1;31m────────────────────────────────────────────────────────────')
+      demnick -= 1
     else:
-		print('\033[1;31m────────────────────────────────────────────────────────────')
-		print(f'{thanh_dep}{redb}Tên Facebook:{greenb} {name[0]}')
-		listnick.append(cookiefb)
-		print('\033[1;31m────────────────────────────────────────────────────────────')
+      print('\033[1;31m────────────────────────────────────────────────────────────')
+      print(f'{thanh_dep}{redb}Tên Facebook:{greenb} {name[0]}')
+      listnick.append(cookiefb)
+      print('\033[1;31m────────────────────────────────────────────────────────────')
   return listnick
 def main():
   dem = 0
