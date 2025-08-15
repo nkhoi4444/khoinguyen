@@ -673,8 +673,10 @@ def Nhap_cookie():
       print(f'{thanh_dep}{redb}Cookie Facebook Die, Vui Lòng Nhập lại !!!')
       demnick -= 1
     else:
+	  print('\033[1;31m────────────────────────────────────────────────────────────')
       print(f'{thanh_dep}{redb}Tên Facebook:{greenb} {name[0]}')
       listnick.append(cookiefb)
+	  print('\033[1;31m────────────────────────────────────────────────────────────')
   return listnick
 def main():
   dem = 0
